@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, max-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    </head>  
    <body>
     <div class="barratopo">
       <div class="t1">Driven Eats</div>
@@ -21,74 +22,74 @@
     <div class="comidas">
       <div class="texto">Primeiro, seu prato.</div>
       <div class="prato">
-        <div class="item selecionado">
+        <button class="item" onclick="selecionarComida(this)">
           <img src="imgs/comida.png" width="144px" height="87px">
           <p class="p1">Frango Yin Yang</p>
           <p class="p2">Um pouco de batata, um pouco de salada</p>
           <p class="p3">R$ 14,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
-        </div>
-        <div class="item">
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+        </button>
+        <button class="item" onclick="selecionarComida(this)">
           <img src="imgs/comida.png" width="144px" height="87px">
           <p class="p1">Frango Yin Yang</p>
           <p class="p2">Um pouco de batata, um pouco de salada</p>
           <p class="p3">R$ 14,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
-        </div>
-        <div class="item">
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+        </button>
+        <div class="item" onclick="selecionarComida(this)">
           <img src="imgs/comida.png" width="144px" height="87px">
           <p class="p1">Frango Yin Yang</p>
           <p class="p2">Um pouco de batata, um pouco de salada</p>
           <p class="p3">R$ 14,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
       </div>
       <div class="texto">Agora, sua bebida.</div>
       <div class="bebida">
-        <div class="item2">
+        <div class="item2" onclick="selecionarBebida(this)">
         <img src="imgs/coca.png" width="144px" height="87px">
         <p class="p1">Coquinha gelada</p>
         <p class="p2">Lata 350ml</p>
         <p class="p3">R$ 4,90</p>
-        <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+        <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
-        <div class="item2">
+        <div class="item2" onclick="selecionarBebida(this)">
           <img src="imgs/coca.png" width="144px" height="87px">
           <p class="p1">Coquinha gelada</p>
           <p class="p2">Lata 350ml</p>
           <p class="p3">R$ 4,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
           </div>
-          <div class="item2">
+          <div class="item2" onclick="selecionarBebida(this)">
             <img src="imgs/coca.png" width="144px" height="87px">
             <p class="p1">Coquinha gelada</p>
             <p class="p2">Lata 350ml</p>
             <p class="p3">R$ 4,90</p>
-            <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+            <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
             </div>
       </div>
-      <div class="texto">Por fim, sua sobremessas.</div>
+      <div class="texto" >Por fim, sua sobremessas.</div>
       <div class="sobremesa">
-        <div class="item3">
+        <div class="item3" onclick="selecionarSobremesa(this)">
           <img src="imgs/pudim.png" width="144px" height="82px">
           <p class="p1">Pudim</p>
           <p class="p2">Apenas pudim</p>
           <p class="p3">R$ 7,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
-        <div class="item3">
+        <div class="item3" onclick="selecionarSobremesa(this)">
           <img src="imgs/pudim.png" width="144px" height="82px">
           <p class="p1">Pudim</p>
           <p class="p2">Apenas pudim</p>
           <p class="p3">R$ 7,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
-        <div class="item3">
+        <div class="item3" onclick="selecionarSobremesa(this)">
           <img src="imgs/pudim.png" width="144px" height="82px">
           <p class="p1">Pudim</p>
           <p class="p2">Apenas pudim</p>
           <p class="p3">R$ 7,90</p>
-          <div class="check"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
       </div>
 
@@ -101,6 +102,7 @@
     </div>
 
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    </body></head> 
+    <script src="script.js"></script>
+    
+    </body>
 </html>

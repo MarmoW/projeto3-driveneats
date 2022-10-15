@@ -14,6 +14,10 @@ img {
     padding-bottom: 18px;
     padding-left: 21px;
     box-sizing: border-box;
+    z-index: 10;
+}
+.setaon {
+    display: flex;
 }
 .t1 {
     font-family: 'Righteous', cursive;
@@ -109,6 +113,7 @@ img {
     padding-bottom: 13px;
     box-sizing: border-box;
     position: relative;
+    border: none;
 
 }
 .item2 {
@@ -176,8 +181,10 @@ img {
     
     
 }
-.check {
+.setaoff {
     display: none;
+}
+.check {
     position: absolute;
     bottom:15px;
     right: 15px;
