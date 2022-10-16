@@ -9,6 +9,8 @@ let nomeclient = 0;
 let mensagem = 0;
 let mensagemwpp = 0;
 let linkwpp = "https://wa.me/?text="
+let z8 = 0;
+let total = 0;
 
 function selecionarComida(item) {
     const rango = document.querySelector(".prato .selecionado");
@@ -71,10 +73,30 @@ function selecionarSobremesa(item) {
 
 
 function fecharpedido(){
-    let total = 0;
     total = Number(preco1.innerHTML) + Number(preco2.innerHTML) + Number(preco3.innerHTML);
     total = total.toFixed(2);
     
+    const z1 = document.querySelector(".z1")
+    const z2 = document.querySelector(".z2")
+    const z3 = document.querySelector(".z3")
+    const z4 = document.querySelector(".z4")
+    const z5 = document.querySelector(".z5")
+    const z6 = document.querySelector(".z6")
+    const z7 = document.querySelector(".z7")
+    z1.innerHTML = prato1.innerHTML;
+    z2.innerHTML = preco1.innerHTML;
+    z3.innerHTML = bebida1.innerHTML;
+    z4.innerHTML = preco2.innerHTML;
+    z5.innerHTML = sobremesa1.innerHTML;
+    z6.innerHTML = preco3.innerHTML;
+    z7.innerHTML = "R$ " + total;
+    z8 = document.querySelector(".revpedido");
+    z8.classList.add('display');
+    
+    return;
+
+}
+function fecharpedido2() {
     nomeclient = prompt("Qual o seu nome?")
     endclient = prompt("Qual o seu endereço?")
     mensagem = "Olá, gostaria de fazer o pedido:\n"  + "- Prato: " + prato1.innerHTML + "\n- Bebida: " + bebida1.innerHTML +"\n- Sobremesa: " + sobremesa1.innerHTML +"\nTotal: R$" +total  +  "\n\nNome: " +nomeclient +  "\nEndereço: " + endclient;
@@ -82,9 +104,30 @@ function fecharpedido(){
     mensagemwpp = encodeURIComponent(mensagem);
     linkwpp += mensagemwpp;
     //window.location.replace(linkwpp);
-    return;
 
+
+} 
+function cancelar() {
+
+    z8.classList.remove('display');
 }
 
 
+/*
 
+const z1 = document.querySelector(".z1")
+const z2 = document.querySelector(".z2")
+const z3 = document.querySelector(".z3")
+const z4 = document.querySelector(".z4")
+const z5 = document.querySelector(".z5")
+const z6 = document.querySelector(".z6")
+const z7 = document.querySelector(".z7")
+z1.innerHTML = prato1;
+z2.innerHTML = preco1;
+z3.innerHTML = bebida1;
+z4.innerHTML = preco2;
+z5.innerHTML = sobremesa1;
+z6.innerHTML = preco3;
+z7.innerHTML = "R$ " + total;
+
+*/
