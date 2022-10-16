@@ -16,9 +16,7 @@ img {
     box-sizing: border-box;
     z-index: 10;
 }
-.setaon {
-    display: flex;
-}
+
 .t1 {
     font-family: 'Righteous', cursive;
     font-weight: 400;
@@ -278,15 +276,17 @@ img {
     
     
 }
-.setaoff {
-    display: none;
-}
 .check {
+    display: none;
     position: absolute;
     bottom:15px;
     right: 15px;
     color: #32B72F;
 }
+.setaon {
+    display: flex;
+}
+
 .selecionado {
     box-shadow: inset 0px 0px 0px 6px #32B72F;
 }

@@ -12,15 +12,22 @@ let linkwpp = "https://wa.me/?text="
 let z8 = 0;
 let total = 0;
 
+
 function selecionarComida(item) {
     const rango = document.querySelector(".prato .selecionado");
+    const seta1 = document.querySelector(".doprato.setaon");
     if ( rango !== null){
-    rango.classList.remove("selecionado");}
-   
+    rango.classList.remove("selecionado");
+   }
+    if ( seta1 !== null){
+    seta1.classList.remove('setaon');
+    }
     item.classList.add("selecionado");
     preco1 = item.querySelector('.preco');
     prato1 = item.querySelector('.p1');
-        
+    const seta = item.querySelector(".check");
+    seta.classList.add("setaon");
+
     let a = document.querySelectorAll('.selecionado').length;
     let b1 = document.querySelector('.botaopedido1');
     
@@ -35,12 +42,19 @@ function selecionarComida(item) {
 
 function selecionarBebida(item) {
     const rango = document.querySelector(".bebida .selecionado");
+    const seta1 = document.querySelector(".dabebida.setaon");
     if ( rango !== null){
     rango.classList.remove("selecionado");}
+    if ( seta1 !== null){
+    seta1.classList.remove('setaon');
+    }
    
     item.classList.add("selecionado");
     preco2 = item.querySelector('.preco');
     bebida1 = item.querySelector('.p1');
+    const seta = item.querySelector(".check");
+    seta.classList.add("setaon");
+
     let a = document.querySelectorAll('.selecionado').length;
     let b1 = document.querySelector('.botaopedido1');
     
@@ -54,12 +68,19 @@ function selecionarBebida(item) {
 }
 function selecionarSobremesa(item) {
     const rango = document.querySelector(".sobremesa .selecionado");
+    const seta1 = document.querySelector(".dasobremesa.setaon");
     if ( rango !== null){
     rango.classList.remove("selecionado");}
+    if ( seta1 !== null){
+    seta1.classList.remove('setaon');
+        }
 
     item.classList.add("selecionado");
     preco3 = item.querySelector('.preco');
     sobremesa1 = item.querySelector('.p1');
+    const seta = item.querySelector(".check");
+    seta.classList.add("setaon");
+
     let a = document.querySelectorAll('.selecionado').length;
     let b1 = document.querySelector('.botaopedido1');
     
