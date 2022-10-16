@@ -22,20 +22,6 @@
     <div class="comidas">
       <div class="texto">Primeiro, seu prato.</div>
       <div class="prato">
-        <button class="item" onclick="selecionarComida(this)">
-          <img src="imgs/comida.png" width="144px" height="87px">
-          <p class="p1">Frango Yin Yang</p>
-          <p class="p2">Um pouco de batata, um pouco de salada</p>
-          <p class="p3">R$ 14,90</p>
-          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
-        </button>
-        <button class="item" onclick="selecionarComida(this)">
-          <img src="imgs/comida.png" width="144px" height="87px">
-          <p class="p1">Frango Yin Yang</p>
-          <p class="p2">Um pouco de batata, um pouco de salada</p>
-          <p class="p3">R$ 14,90</p>
-          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
-        </button>
         <div class="item" onclick="selecionarComida(this)">
           <img src="imgs/comida.png" width="144px" height="87px">
           <p class="p1">Frango Yin Yang</p>
@@ -43,28 +29,42 @@
           <p class="p3">R$ 14,90</p>
           <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
+        <div class="item" onclick="selecionarComida(this)">
+          <img src="imgs/comida1.png" width="144px" height="87px">
+          <p class="p1">Estrogonofe do Ferinha</p>
+          <p class="p2">Rico em top-gap</p>
+          <p class="p3">R$ 15,90</p>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+        </div>
+        <div class="item" onclick="selecionarComida(this)">
+          <img src="imgs/comida3.png" width="144px" height="87px">
+          <p class="p1">Coxinha Vegana</p>
+          <p class="p2">Ninguém sabe do que é feito</p>
+          <p class="p3">R$ 10,90</p>
+          <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
+        </div>
       </div>
       <div class="texto">Agora, sua bebida.</div>
       <div class="bebida">
         <div class="item2" onclick="selecionarBebida(this)">
         <img src="imgs/coca.png" width="144px" height="87px">
-        <p class="p1">Coquinha gelada</p>
+        <p class="p1">Coquinha Lata</p>
         <p class="p2">Lata 350ml</p>
         <p class="p3">R$ 4,90</p>
         <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
         <div class="item2" onclick="selecionarBebida(this)">
-          <img src="imgs/coca.png" width="144px" height="87px">
-          <p class="p1">Coquinha gelada</p>
-          <p class="p2">Lata 350ml</p>
-          <p class="p3">R$ 4,90</p>
+          <img src="imgs/coca2.png" width="144px" height="87px">
+          <p class="p1">Coquinha 600ml</p>
+          <p class="p2">Garrafa 600ml</p>
+          <p class="p3">R$ 7,90</p>
           <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
           </div>
           <div class="item2" onclick="selecionarBebida(this)">
-            <img src="imgs/coca.png" width="144px" height="87px">
-            <p class="p1">Coquinha gelada</p>
-            <p class="p2">Lata 350ml</p>
-            <p class="p3">R$ 4,90</p>
+            <img src="imgs/coca3.png" width="144px" height="87px">
+            <p class="p1">Cocona 2L</p>
+            <p class="p2">2L de pura maravilha</p>
+            <p class="p3">R$ 11,90</p>
             <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
             </div>
       </div>
@@ -78,26 +78,28 @@
           <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
         <div class="item3" onclick="selecionarSobremesa(this)">
-          <img src="imgs/pudim.png" width="144px" height="82px">
-          <p class="p1">Pudim</p>
-          <p class="p2">Apenas pudim</p>
-          <p class="p3">R$ 7,90</p>
+          <img src="imgs/pudim2.png" width="144px" height="82px">
+          <p class="p1">Sorvete de laranja</p>
+          <p class="p2">Rico em vitamina C</p>
+          <p class="p3">R$ 6,90</p>
           <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
         <div class="item3" onclick="selecionarSobremesa(this)">
-          <img src="imgs/pudim.png" width="144px" height="82px">
-          <p class="p1">Pudim</p>
-          <p class="p2">Apenas pudim</p>
-          <p class="p3">R$ 7,90</p>
+          <img src="imgs/pudim3.png" width="144px" height="82px">
+          <p class="p1">Mousse de Chocolate</p>
+          <p class="p2">Cremoso</p>
+          <p class="p3">R$ 8,90</p>
           <div class="check setaoff"><ion-icon name="checkmark-circle" width="16px" height="16px"></ion-icon></div>
         </div>
       </div>
 
     </div>
     <div class="barrabaixo">
-      <div class="botaopedido">
-        <p class="p4"> Selecione os 3 itens</p>
-        <p class="p4">para fechar o pedido</p>
+      <div class="botaopedido1 display">
+        <p class="p4"> Selecione os 3 itens para fechar o pedido</p>
+      </div>
+      <div class="botaopedido2" onclick="fecharpedido()">
+        <p class="p4"> Fechar pedido</p>
       </div>
     </div>
 

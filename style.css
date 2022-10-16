@@ -43,8 +43,8 @@ img {
     background-color: #FFFFFF;
 }
 
-.botaopedido {
-    display: flex;
+.botaopedido1 {
+    display: none;
     flex-direction: column;
     background-color: #CBCBCB;
     height: 61px;
@@ -53,8 +53,32 @@ img {
     box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    z-index: 10;
     
 
+}
+.botaopedido2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #32B72F;
+    height: 61px;
+    width: 364px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    z-index: 9;
+    position: fixed;
+    bottom: 15px;
+    
+
+}
+.display {
+    display: flex;
 }
 
 .comidas{
