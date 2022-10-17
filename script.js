@@ -95,7 +95,8 @@ function selecionarSobremesa(item) {
 
 function fecharpedido(){
     total = Number(preco1.innerHTML) + Number(preco2.innerHTML) + Number(preco3.innerHTML);
-    total = total.toFixed(2);
+    total = total.toFixed(2).replace('.', ',');
+    
     
     const z1 = document.querySelector(".z1")
     const z2 = document.querySelector(".z2")
@@ -121,10 +122,10 @@ function fecharpedido2() {
     nomeclient = prompt("Qual o seu nome?")
     endclient = prompt("Qual o seu endereço?")
     mensagem = "Olá, gostaria de fazer o pedido:\n"  + "- Prato: " + prato1.innerHTML + "\n- Bebida: " + bebida1.innerHTML +"\n- Sobremesa: " + sobremesa1.innerHTML +"\nTotal: R$" +total  +  "\n\nNome: " +nomeclient +  "\nEndereço: " + endclient;
-    alert(mensagem)
+    //alert(mensagem)
     mensagemwpp = encodeURIComponent(mensagem);
     linkwpp += mensagemwpp;
-    //window.location.replace(linkwpp);
+    window.location.replace(linkwpp);
 
 
 } 
